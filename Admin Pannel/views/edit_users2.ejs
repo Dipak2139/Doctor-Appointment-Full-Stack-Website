@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <link rel="stylesheet" href="../registration.css">
+</head>
+
+<body>
+    <section class="container">
+        <header>Edit User <%= user.Name  %></header>
+        <form action="/update2/<%= user._id  %>" method="post" class="form" method="post">
+            <div class="input-box">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter full name" name="name2" value="<%= user.name %>">
+            </div>
+
+            <!-- <div class="input-box">
+                <label for="doctype">Gender:</label>
+                <select id="doctype" name="doctype">
+                    <option value="Gastrology" selected>Gastrology</option>
+                    <option value="female">Female</option>
+                    <option value="preferNotToSay">Prefer not to say</option>
+                </select>
+            </div> -->
+
+            <div class="column">
+                <div class="input-box">
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter phone number" name="email2" value="<%= user.email%>"  required>
+                </div>
+
+               
+
+                
+                </div>
+
+               
+            </div>
+            
+            <button>Submit</button>
+        </form>
+    </section>
+</body>
+
+</html>

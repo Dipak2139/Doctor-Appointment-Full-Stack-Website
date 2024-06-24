@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <link rel="stylesheet" href="./registration.css">
+</head>
+
+<body>
+    <section class="container">
+        <header>Add User</header>
+        <form action="/add" class="form" method="post">
+            <div class="input-box">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter full name" name="name1" required>
+            </div>
+
+            <!-- <div class="input-box">
+                <label for="doctype">Gender:</label>
+                <select id="doctype" name="doctype">
+                    <option value="Gastrology" selected>Gastrology</option>
+                    <option value="female">Female</option>
+                    <option value="preferNotToSay">Prefer not to say</option>
+                </select>
+            </div> -->
+
+            <div class="column">
+                <div class="input-box">
+                    <label>Phone Number</label>
+                    <input type="tel" placeholder="Enter phone number" name="number1" required>
+                </div>
+
+               
+
+                <div class="gender-box">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="male" selected>Male</option>
+                        <option value="female">Female</option>
+                        <option value="preferNotToSay">Prefer not to say</option>
+                    </select>
+                </div>
+
+                <div class="gender-box">
+                    <label for="medical">Medical Specailist</label>
+                    <select id="gender" name="specialist">
+                        <option value="Cardiology" selected>Cardiology</option>
+                        <option value="Neurology">Neurology</option>
+                        <option value="Oncology">Oncology</option>
+                        <option value="Gastroenterology">Gastroenterology</option>
+                        <option value="ENT">ENT</option>
+                        <option value="Dentices">Dentices</option>
+                        <option value="General Physician">General Physician</option>
+                        <option value="Urology">Urology</option>
+                        <option value="General Sugery">General Sugery</option>
+                        <option value="Orthopaedics">Orthopaedics</option>
+                        <option value="Dermotology">Dermotology</option>
+                        <option value="Opthalmology">Opthalmology</option>
+                        <option value="Internal Medicine">Internal Medicine</option>
+                        <option value="Radiation Oncology">Radiation Oncology</option>
+
+s
+                    </select>
+                </div>
+
+                <!-- <div class="input-box">
+                    <label>Appointment Date</label>
+                    <input type="date" placeholder="Enter birth date" name="birthdate1" required>
+                </div> -->
+            </div>
+            <!-- <div class="gender-box">
+                <h3>Gender</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="check-male" name="gender1" checked>
+                        <label for="check-male">Male</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-female" name="gender1">
+                        <label for="check-female">Female</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-other" name="gender1">
+                        <label for="check-other">Prefer not to say</label>
+                    </div>
+                </div>
+            </div> -->
+
+
+            <div class="input-box">
+                <label>Doctor name</label>
+                <input type="text" placeholder="Enter Doctor Name" name="doctor" required>
+            </div>
+           
+
+            <div class="input-box">
+                <label>Appointment Date</label>
+                <input type="date" placeholder="Enter birth date" name="appointment" required>
+            </div>
+
+            <div class="input-box address">
+                <label>Address</label>
+                <input type="text" placeholder="Enter your address" name="address1" required>
+                <!-- <div class="column">
+                    <input type="number" placeholder="Enter postal code" name="postalcode1" required>
+                </div> -->
+            </div>
+            <button>Submit</button>
+        </form>
+    </section>
+</body>
+
+</html>
